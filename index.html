@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Segurança e boas práticas -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; frame-src *; connect-src *;">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+  <meta name="referrer" content="no-referrer" />
+
+  <!-- SEO e redes sociais -->
+  <title>Feiticeira.club</title>
+  <meta name="description" content="A Feiticeira club é a melhor plataforma de apostas com segurança, pagamentos instantâneos via Pix e suporte 24/7. Jogue e multiplique seus ganhos!" />
+  <meta name="keywords" content="feiticeira club, feitiiceira.vip, feiticeira.club, banca feiticeira, banca feiticeira vip, banca de apostas, apostas online, loterias, cassino, palpites esportivos, ganhar dinheiro, apostas seguras, pix rápido, feiticeira vip oficial, feiticeira vip login, feiticeira vip cadastro, feiticeira vip esportes, feiticeira vip cassino, feiticeira vip futebol, feiticeira vip resultados, feiticeira vip apostas seguras, feiticeira vip pix imediato, feiticeira vip grupo vip, feiticeira vip dicas, feiticeira vip análises, feiticeira vip estratégias" />
+  <meta name="author" content="Feiticeira.club" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Feiticeira.club - A Banca de Apostas Mais Confiável e Rentável" />
+  <meta property="og:description" content="Ganhe dinheiro com apostas seguras na Feiticeira.club. Pix rápido e suporte 24h. Jogue agora e maximize seus lucros!" />
+  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhesDatphF1wF9AAHNcDekAQHG9oR4kYMVGBntwFUbpZxi2r6fAy_z09lbIGIH0_ryKSWFrlJVVec_9z2EpL8mgcUZHTBKa5TZL0tgSrScqpoJfnNaytz8bxQf9p9M8NUEEq2J_MOrYjBuGx442sKrCGAmtJaaJAMDq6-XW5THupyaRQZ3id5V7jrE3bEf9/s1600/feiticeira2.png" />
+  <meta property="og:url" content="https://www.feiticeiraclub.net" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Feiticeira club - A Banca de Apostas Mais Confiável e Rentável" />
+  <meta name="twitter:description" content="Aposte com segurança e receba via Pix na hora. Acesse agora a Feiticeira.club!" />
+  <meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhesDatphF1wF9AAHNcDekAQHG9oR4kYMVGBntwFUbpZxi2r6fAy_z09lbIGIH0_ryKSWFrlJVVec_9z2EpL8mgcUZHTBKa5TZL0tgSrScqpoJfnNaytz8bxQf9p9M8NUEEq2J_MOrYjBuGx442sKrCGAmtJaaJAMDq6-XW5THupyaRQZ3id5V7jrE3bEf9/s1600/feiticeira2.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://assets.trivo.bet/images/feiticeira2.png" type="image/png">
+  <link rel="shortcut icon" href="https://assets.trivo.bet/images/feiticeira2.png" type="image/png">
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhesDatphF1wF9AAHNcDekAQHG9oR4kYMVGBntwFUbpZxi2r6fAy_z09lbIGIH0_ryKSWFrlJVVec_9z2EpL8mgcUZHTBKa5TZL0tgSrScqpoJfnNaytz8bxQf9p9M8NUEEq2J_MOrYjBuGx442sKrCGAmtJaaJAMDq6-XW5THupyaRQZ3id5V7jrE3bEf9/s192/feiticeira2.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="canonical" href="https://www.feiticeiraclub.net" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+    .iframe-container {
+      flex: 1;
+      width: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      background: #000;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    /* Estilo do menu hambúrguer */
+    #menu-hamburguer {
+      background: #ff4d4d;
+      color: white;
+      border-radius: 30px;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      user-select: none;
+      z-index: 10000;
+    }
+    #menu-hamburguer svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      fill: white;
+      transition: transform 0.3s ease;
+    }
+    #menu-hamburguer.open svg {
+      transform: rotate(90deg);
+    }
+    /* Container dos botões */
+    .botoes-container {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 12px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 14px;
+      transition: max-height 0.4s ease, opacity 0.4s ease;
+      max-height: 0;
+      opacity: 0;
+      pointer-events: none;
+      width: auto;
+      max-width: 95vw;
+    }
+    .botoes-container.open {
+      max-height: 100px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .botao-flutuante {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 22px;
+      width: 55px;
+      height: 55px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 0;
+      flex-shrink: 0;
+    }
+    .botao-flutuante img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .botao-flutuante:hover {
+      transform: scale(1.1);
+    }
+    #botao-blaze {
+      background-color: #000;
+      border: 2px solid #ff0000;
+      animation: pulse 1.5s infinite;
+      padding: 8px;
+    }
+    #botao-blaze img {
+      width: 120%;
+      height: 120%;
+      object-fit: contain;
+    }
+    #botao-brasil {
+      background-color: #009c3b;
+      border: 2px solid #fedf00;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+    }
+    .botoes-container::-webkit-scrollbar {
+      display: none;
+    }
+    .botoes-container {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    @media (max-width: 500px) {
+      .botao-flutuante {
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+      }
+      .botao-flutuante img {
+        width: 80%;
+        height: 80%;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+.buttons {
+  position: relative;
+}
+
+.botoes-container {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px 6px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 50px; /* faixa ainda menor */
+  opacity: 0;
+  pointer-events: none;
+  width: auto;
+  max-width: 95vw;
+  z-index: 9999;
+}
+
+.botoes-container.open {
+  max-height: 50px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="iframe-container">
+      <iframe allow='clipboard-read; clipboard-write' frameborder='0' height='95%' id='embeddedIframe' loading='lazy' sandbox='allow-scripts allow-same-origin' src='https://app.feiticeira.club/pr/PRBJ9rmd' title='Conteúdo interativo da feiticeira.Club' width='100%'></iframe>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="buttons">
+      <!-- Menu hambúrguer -->
+      <div id="menu-hamburguer" aria-label="Menu Bancas Parceiras" role="button" tabindex="0">
+        <svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>bancas parceiras</span>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- Container de botões -->
+
+      <div class="botoes-container" id="botoes-container">
+
+        <button id="botao-bola" class="botao-flutuante" title="Brasileirão ⚽">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilbrqWRLPNsbW6WoWMAOrGQzc1SGVqKVqZ4BcKFjRUAKLzn1Z9PbIDUlqukU1y6ulZE61QUZ8ZRZ2T7M66goqwYDuaOQur0pV8piHPB2LMDGWSSsT6RXT9ajTRnTJ_eSk7joZ8KA3PJ2GJTlkeNT-Q6Y6UN1QfExNtjEK5UjWoPQbTXKKbFShsl2INN0eO/s200/4297950.png
+&w=1080&q=75" alt="Blaze" />
+
+</button>
+
+
+        
+        
+        
+        <button id="botao-acertosclub" class="botao-flutuante" title="Acertos Club">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjP_DDrfM-z9sNWLEimMl-7HvoyN-D3D_EKBnW3Xj_qH2tjERcQzv21MChv8lD5kUJAzhT9_q6livlEmy0rE8qc6jXkIs_O2skEFHUJEcKwwecesKIBFHaITULB5Zzqs87X5AzRmig7o_9fEao_BUU6nnIOF7pYJGiOJCcY7jEb1PRMHqISYcCnnVXb3fU/s200/IMG-20240927-WA0455__2_-removebg-removebg-preview%20%281%29%20%281%29.png" alt="acertosclub" />
+        </button>
+
+        
+        <button id="botao-brasil" class="botao-flutuante" title="Banca Brasileira">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrcxu6Uk7T-3p7nOeoaQ3Mm58dCzom7gsosXvXeh3_IHVU0Go837CkD19wjF3HkS3lVA5R0BkvzL1ZpNMpKx3AYcWWPS_Rnu7Pei50meXdIz15Lp0JRoiOK5Zlq8iBPetpXTmyBSVyfZMuz2Incf5HRefwQJpUK0i3aIlljoPIe2po61wvaodTLAZveH5V/s200/bancabrasileira.png" alt="Brasil" />
+        </button>
+
+
+
+<button id="botao-tigerclub" class="botao-flutuante" title="Tiger Club">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2MQAJsSnixWBwPePeepwQaL0qFJdgrQMGvQmgrFk_KV5F4qd4SeG7Hj_Ng9elzVA-K7oxG6-dxevoqa48WIGXfeZ4OIWzbpCVItzlbIeV2VXBvUalfok7MDRV-upu6Ga0RDoG-_74RZRtvlzb8THF_asV1VBH8nsAyTUh-vwEI_3UJu3ZlL422-J_w398/s200/jogar" alt="tigerclub" />
+        </button>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner de instalação -->
+  <div id="install-banner" style="display:none; position: fixed; bottom: 20px; left: 20px; right: 20px; background: #111; color: #fff; padding: 16px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.6); z-index: 9999; text-align: center;">
+    <p style="margin: 0 0 10px;">📲 Instale nosso app para acesso mais rápido e fácil!</p>
+    <button onclick="instalarApp()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer;">Instalar App</button>
+  </div>
+
+  <script>
+    const menu = document.getElementById('menu-hamburguer');
+    const botoesContainer = document.getElementById('botoes-container');
+
+    function toggleMenu() {
+      const aberto = menu.classList.toggle('open');
+      if (aberto) {
+        botoesContainer.classList.add('open');
+      } else {
+        botoesContainer.classList.remove('open');
+      }
+    }
+
+    menu.addEventListener('click', toggleMenu);
+
+    // Permitir abrir/fechar com Enter ou Espaço para acessibilidade
+    menu.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleMenu();
+      }
+    });
+
+    // Eventos dos botões
+    document.getElementById("botao-bola").addEventListener("click", function () {
+      window.location.href = "https://www.brasileirao.site";
+    });
+
+    document.getElementById("botao-tigerclub").addEventListener("click", function () {
+      window.open("https://app.tigersclub.vip/pr/cmDAwXiS", "_blank");
+    });
+    document.getElementById("botao-acertosclub").addEventListener("click", function () {
+      window.open("https://app.acertos.club/pr/sbrqjugZ", "_blank");
+    });
+    document.getElementById("botao-acertos").addEventListener("click", function () {
+      window.open("https://www.jogodamina.site/", "_blank");
+    });
+    document.getElementById("botao-brasil").addEventListener("click", function () {
+      window.open("https://app.bancabrasileira.com.br/pr/EYZ6dslW", "_blank");
+    });
+
+    // Service Worker e instalação do app
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('[SW] Registrado com sucesso!', reg))
+        .catch(err => console.error('[SW] Erro ao registrar:', err));
+    }
+
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      if (!localStorage.getItem('appInstalado')) {
+        document.getElementById('install-banner').style.display = 'block';
+      }
+    });
+
+    function instalarApp() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('Usuário aceitou instalar o app');
+            localStorage.setItem('appInstalado', 'true');
+          } else {
+            console.log('Usuário recusou instalar o app');
+          }
+          document.getElementById('install-banner').style.display = 'none';
+          deferredPrompt = null;
+        });
+      } else {
+        alert("Você já instalou ou ainda não pode instalar.");
+      }
+    }
+  </script>
+</body>
+</html>
